@@ -22,7 +22,7 @@ def main():
     for r in relevant_rules:
         print(f"   - {r['rule_id']}: {r['title']}")
     print()
-
+  
     # 调用大模型分析
     result = analyze_code_with_qwen(code, relevant_rules)
 
