@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #333;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.input-section {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+textarea, #file-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.or {
+  text-align: center;
+  color: #999;
+  margin: 10px 0;
+  font-style: italic;
+}
+
+#file-input {
+  padding: 8px;
+}
+
+#analyze-btn {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  padding: 12px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#analyze-btn:hover {
+  background: #45a049;
+}
+
+.loading {
+  text-align: center;
+  color: #555;
+  font-style: italic;
+  margin: 20px 0;
+}
+
+.results {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background: #f9f9f9;
+  display: none;
+}
+
+.issue {
+  background: #fffaf0;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-left: 4px solid #ff6b6b;
+  border-radius: 4px;
+}
+
+.issue h3 {
+  color: #d63031;
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+
+.issue p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #2d3436;
+}
+
+.issue .suggestion {
+  font-style: italic;
+  color: #27ae60;
+}

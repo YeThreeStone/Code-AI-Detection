@@ -1,11 +1,8 @@
 # src/rag_retriever.py
-from typing import List, Dict
 
-from langchain_community.vectorstores import FAISS
-from langchain_community.embeddings import HuggingFaceEmbeddings
 from sklearn.metrics.pairwise import cosine_similarity
 
-from src.rule_loader import load_rules_from_md
+from .rule_loader import load_rules_from_md
 import os
 import dashscope
 from dashscope import TextEmbedding

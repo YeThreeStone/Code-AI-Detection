@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>代码规范智能检测系统</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🔍 代码规范智能检测系统</h1>
+    <p>基于 RAG + 通义千问大模型，自动检测代码违规并提供修复建议</p>
+
+    <div class="input-section">
+      <label for="code-input">📝 输入代码</label>
+      <textarea id="code-input" placeholder="粘贴你的Java代码..." rows="10"></textarea>
+      <div class="or">或</div>
+      <input type="file" id="file-input" accept=".java,.py,.js,.go" />
+    </div>
+
+    <button id="analyze-btn" onclick="analyzeCode()">🚀 开始检测</button>
+
+    <div id="loading" class="loading" style="display: none;">🔍 正在分析中，请稍候...</div>
+
+    <div id="results" class="results"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

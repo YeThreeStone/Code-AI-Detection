@@ -2,9 +2,9 @@
 ## ▶️ 5. `src/main.py` - 主程序
 
 # src/main.py
-from src.rag_retriever import RuleRetriever
-from src.llm_analyzer import analyze_code_with_qwen
-import os
+from rag_retriever import RuleRetriever
+from llm_analyzer import analyze_code_with_qwen
+
 
 def read_code_file(file_path: str) -> str:
     with open(file_path, 'r', encoding='utf-8') as f:
@@ -13,7 +13,7 @@ def read_code_file(file_path: str) -> str:
 def main():
     # 初始化
     retriever = RuleRetriever("../config/coding_standards.md")
-    code = read_code_file("../test_code.java")
+    code = read_code_file("../../test_code.java")
     print("🔍 正在检测代码...\n")
 
     # RAG 检索相关规则
